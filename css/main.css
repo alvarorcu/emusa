@@ -148,7 +148,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section {
-    padding-top: 60px;
+    padding-top: 90px;
+    margin-bottom: 40px;
 }
 
 p {
@@ -174,6 +175,21 @@ p {
 .sfixed-top {
     margin-top: 100px !important;
 }
+
+.xsfixed-top {
+    padding-top: 100px !important;
+}
+
+#img-8 {
+    margin-top: 10em;
+}
+
+#estandares h3{
+    margin: 0;
+}
+
+
+    
 
 
 
@@ -231,6 +247,19 @@ p {
     }
     #phones {
         padding-bottom: 10px !important;
+    }
+    .top-section {
+        padding-top: 30px;
+    }
+    #img-8 {
+    margin-top: 0;
+    }
+    section .row {
+        display: block !important;
+    }
+
+    #img-paises {
+    margin-top: 2em;
     }
 }
 

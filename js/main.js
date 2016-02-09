@@ -12,10 +12,12 @@ $(document).ready(function() {
 
       if ($(window).scrollTop() > 228) {
         $('#navbar').addClass('navbar-fixed');
+        $('.top-section').addClass('xsfixed-top');
       }
 
       if ($(window).scrollTop() < 228) {
         $('#navbar').removeClass('navbar-fixed');
+        $('.top-section').removeClass('xsfixed-top');
       }
 
     }
@@ -23,12 +25,12 @@ $(document).ready(function() {
 
       if ($(window).scrollTop() > 128) {
         $('#navbar').addClass('navbar-fixed');
-        $('.section').addClass('sfixed-top');
+        $('.top-section').addClass('sfixed-top');
       }
 
       if ($(window).scrollTop() < 128) {
         $('#navbar').removeClass('navbar-fixed');
-        $('.section').removeClass('sfixed-top');
+        $('.top-section').removeClass('sfixed-top');
       }
     }
 
@@ -36,12 +38,12 @@ $(document).ready(function() {
 
       if ($(window).scrollTop() > 128) {
         $('#navbar').addClass('navbar-fixed');
-        $('.section').addClass('fixed-top');
+        $('.top-section').addClass('fixed-top');
       }
 
       if ($(window).scrollTop() < 128) {
         $('#navbar').removeClass('navbar-fixed');
-        $('.section').removeClass('fixed-top');
+        $('.top-section').removeClass('fixed-top');
       }
     }
 
