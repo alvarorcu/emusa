@@ -254,7 +254,7 @@ p {
     #img-8 {
     margin-top: 0;
     }
-    section .row {
+    .section .row {
         display: block !important;
     }
 
