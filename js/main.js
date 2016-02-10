@@ -6,46 +6,44 @@ $(document).ready(function() {
   //you know the position.
   $(window).scroll(function () { 
 
-    console.log($(window).scrollTop());
+    // if ($(window).width() < 600) {
 
-    if ($(window).width() < 600) {
+    //   if ($(window).scrollTop() > 228) {
+    //     $('#navbar').addClass('navbar-fixed');
+    //     $('.top-section').addClass('xsfixed-top');
+    //   }
 
-      if ($(window).scrollTop() > 228) {
-        $('#navbar').addClass('navbar-fixed');
-        $('.top-section').addClass('xsfixed-top');
-      }
+    //   if ($(window).scrollTop() < 228) {
+    //     $('#navbar').removeClass('navbar-fixed');
+    //     $('.top-section').removeClass('xsfixed-top');
+    //   }
 
-      if ($(window).scrollTop() < 228) {
-        $('#navbar').removeClass('navbar-fixed');
-        $('.top-section').removeClass('xsfixed-top');
-      }
+    // }
+    // else if ($(window).width() < 1250) {
 
-    }
-    else if ($(window).width() < 1250) {
+    //   if ($(window).scrollTop() > 128) {
+    //     $('#navbar').addClass('navbar-fixed');
+    //     $('.top-section').addClass('sfixed-top');
+    //   }
 
-      if ($(window).scrollTop() > 128) {
-        $('#navbar').addClass('navbar-fixed');
-        $('.top-section').addClass('sfixed-top');
-      }
+    //   if ($(window).scrollTop() < 128) {
+    //     $('#navbar').removeClass('navbar-fixed');
+    //     $('.top-section').removeClass('sfixed-top');
+    //   }
+    // }
 
-      if ($(window).scrollTop() < 128) {
-        $('#navbar').removeClass('navbar-fixed');
-        $('.top-section').removeClass('sfixed-top');
-      }
-    }
+    // else {
 
-    else {
+    //   if ($(window).scrollTop() > 128) {
+    //     $('#navbar').addClass('navbar-fixed');
+    //     $('.top-section').addClass('fixed-top');
+    //   }
 
-      if ($(window).scrollTop() > 128) {
-        $('#navbar').addClass('navbar-fixed');
-        $('.top-section').addClass('fixed-top');
-      }
-
-      if ($(window).scrollTop() < 128) {
-        $('#navbar').removeClass('navbar-fixed');
-        $('.top-section').removeClass('fixed-top');
-      }
-    }
+    //   if ($(window).scrollTop() < 128) {
+    //     $('#navbar').removeClass('navbar-fixed');
+    //     $('.top-section').removeClass('fixed-top');
+    //   }
+    // }
 
 
   });
