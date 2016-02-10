@@ -72,7 +72,7 @@ h3 {
 }
 
 #header {
-    margin: 20px 0;
+    margin: 17px 0;
     color: #2c2c2c;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -83,13 +83,13 @@ h3 {
 }
 
 #header .col{
-    padding: 15px 25px;
+    padding: 7px 25px;
 }
 
 #header .center-col{
     border-right: 4px #1e1e1e solid;
     border-left: 4px #1e1e1e solid;
-    padding-top: 30px !important;
+    padding-top: 17px !important;
 }
 
 #header span {
