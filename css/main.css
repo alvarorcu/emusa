@@ -67,6 +67,10 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: -2px;
 }
 
+h3 {
+    font-size: 2.75rem !important;
+}
+
 #header {
     margin: 20px 0;
     color: #2c2c2c;
@@ -79,9 +83,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .col{
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px 25px;
 }
+
 #header .center-col{
     border-right: 4px #1e1e1e solid;
     border-left: 4px #1e1e1e solid;
@@ -112,9 +116,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .phone-icon {
-    width: 14px;
-    height: 14px;
-    margin-right: 2px;
+    width: 12px;
+    height: 12px;
+    margin-right: 4px;
+    margin-bottom: 2px;
 }
 
 #header .center-col a{
@@ -154,6 +159,24 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     font-size: 1.2em;
+}
+
+.text-justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.balign-wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: flex-end;
+          align-items: flex-end;
+}
+
+.balign-wrapper .balign {
+  display: block;
 }
 
 /* ==========================================================================
