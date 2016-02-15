@@ -68,7 +68,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h3 {
-    font-size: 2.75rem !important;
+    font-size: 2.75rem;
+}
+
+a {
+    color: #1e1e1e;
 }
 
 #header {
@@ -198,28 +202,159 @@ p {
     margin-top: 50px;
 }
 
-/*.fixed-top {
-    margin-top: 128px !important;
-}
-
-.sfixed-top {
-    margin-top: 100px !important;
-}
-
-.xsfixed-top {
-    padding-top: 100px !important;
-}*/
-
 #img-8 {
     margin-top: 10em;
 }
 
-#estandares h3{
-    margin: 0;
+#estandares h3 {
+    margin: 5px;
 }
 
+/* ==========================================================================
+   EMPACATE
+   ========================================================================== */
 
+.btn-large {
+    background-color: #1e1e1e;
+    font-weight: 700;
+    border-radius: 11px;
+}
 
+.btn-start {
+    margin-top: 3em;
+    margin-bottom: 0.7em;
+}
+
+.btn-large:hover {
+    background-color: #2f2f2f;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+#emp-inicio h3{
+    margin: 10px;
+}
+
+#empaques {
+    background-color: #e0e0e0;
+    padding-top: 45px;
+    padding-bottom: 40px;
+}
+
+.container-btn {
+    color: #1e1e1e;
+}
+
+.container-btn .col {
+    padding-bottom: 1em;
+}
+
+.container-btn .col:hover {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container-btn h3{
+    margin-bottom: 10px;
+}
+
+.empaques-p {
+    text-align: justify;
+    text-justify: inter-word;
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 0.1em 1em 1em;
+}
+
+.empaques-p p {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.mini-img, .mini-img .row, .mini-img .row .col {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.mini-img img {
+    padding: 0 1.5em 0;
+}
+
+.mini-img a .col:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#nonfood a .row:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#agro h5 {
+    margin-bottom: 10px;
+}
+
+.empaque-agro {
+    margin-top: 30px;
+}
+
+#agro .col {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.border-col {
+    border-right: 5px dashed #1e1e1e;
+    border-left: 5px dashed #1e1e1e;
+}
+
+#agro a .col:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.elegido {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.elegido p {
+    margin-top: 0;
+}
+
+#visit-us, #visit-you {
+    height: 50px;
+    padding: 5px 18px;
+    margin-right: 6px;
+    margin-left: 6px;
+}
+#visit-us {
+    line-height: 43px;
+}
+
+#visit-you {
+    line-height: 20px;
+}
+
+input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
+    margin: 0;
+    border-bottom: 3px solid #1e1e1e;
+}
+
+textarea.materialize-textarea {
+    min-height: 0;
+}
+
+.input-field {
+    margin-top: 0;
+}
+
+.input-field label {
+    color: #1e1e1e;
+}
+
+form .row {
+    margin-bottom: 5px;
+}
 
 /* ==========================================================================
    Media Queries
@@ -234,6 +369,17 @@ p {
     nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     height: 85px;
     line-height: 85px
+    }
+    .empaques-p p {
+        padding-left: 0.2em;
+        padding-right: 0.2em;
+    }
+    .mini-img h6{
+        font-size: 0.8rem !important;
+    }
+    #agro h5 {
+        font-size: 1.5rem;
+    }
 }
 
 @media only screen and (max-width: 1150px) {
@@ -243,6 +389,10 @@ p {
     .brand-logo {
         margin: 0 0 0 5%;
     }
+    #agro .col {
+        padding-left: 0.75em;
+        padding-right: 0.75em;
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -251,6 +401,26 @@ p {
     }
     .button-collapse {
         margin-left: 20px;
+    }
+    h3 {
+        font-size: 1.5rem !important;
+    }
+    .m6 h3 {
+        font-size: 2.5rem !important;
+    }
+
+    .notablet .valign-wrapper{
+        display: block !important;
+    }
+
+    .notablet {
+        padding-top: 15px;
+    }
+    .mini-img h6{
+        font-size: 1.6rem !important;
+    }
+    #agro h5 {
+        font-size: 1.2rem;
     }
 }
 
@@ -289,6 +459,21 @@ p {
     #img-paises {
     margin-top: 2em;
     }
+    h3 {
+        font-size: 2.75rem !important;
+    }
+    .btn-start {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    }
+
+    .mini-img h6{
+        font-size: 1.2rem !important;
+    }
+    #agro h5 {
+        font-size: 2.2rem;
+    }
+
 }
 
 @media only screen and (min-width: 35em) {
