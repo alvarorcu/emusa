@@ -340,10 +340,6 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
     border-bottom: 3px solid #1e1e1e;
 }
 
-textarea.materialize-textarea {
-    min-height: 0;
-}
-
 .input-field {
     margin-top: 5px;
 }
