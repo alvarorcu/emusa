@@ -14,7 +14,7 @@ $(document).ready(function() {
       event.preventDefault();
       if ($(window).width() < 600) {
         $('html, body').animate({
-              scrollTop: $(target).offset().top - 315
+              scrollTop: $(target).offset().top - 60
           }, 1000);
       }
       else {

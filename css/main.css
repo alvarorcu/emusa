@@ -502,7 +502,6 @@ textarea.materialize-textarea {
         align-items: center;
         font-size: 0.5em;
     }
-
     #header span {
         font-size: 0.7em;
     }
@@ -573,6 +572,9 @@ textarea.materialize-textarea {
     #agro h5 {
         font-size: 2.2rem;
         margin-bottom: 10px;
+    }
+    #empaques {
+        padding-top: 90px;
     }
 }
 
