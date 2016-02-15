@@ -326,6 +326,7 @@ p {
     padding: 5px 18px;
     margin-right: 6px;
     margin-left: 6px;
+    margin-bottom: 10px;
 }
 #visit-us {
     line-height: 43px;
@@ -370,6 +371,32 @@ input:not([type]):focus:not([readonly]) + label, input[type=text]:focus:not([rea
    Media Queries
    ========================================================================== */
 
+@media only screen and (max-width: 1600px) {
+    h3 {
+        font-size: 1.8rem !important;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    #visit-us{
+        margin-left: 0;
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    #visit-you {
+        margin-right: 0;
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    .empaques-p p {
+        padding-left: 0.3em;
+        padding-right: 0.3em;
+    }
+}
+
 @media only screen and (max-width: 1250px) {
     .brand-logo img{
         height: 85px;
@@ -390,6 +417,9 @@ input:not([type]):focus:not([readonly]) + label, input[type=text]:focus:not([rea
     #agro h5 {
         font-size: 1.5rem;
     }
+    p {
+        font-size: 0.9em;
+    }
 }
 
 @media only screen and (max-width: 1150px) {
@@ -403,6 +433,12 @@ input:not([type]):focus:not([readonly]) + label, input[type=text]:focus:not([rea
         padding-left: 0.75em;
         padding-right: 0.75em;
     }
+    h3 {
+        font-size: 1.5rem !important;
+    }
+    .btn-start {
+        margin-top: 2em;
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -415,8 +451,11 @@ input:not([type]):focus:not([readonly]) + label, input[type=text]:focus:not([rea
     h3 {
         font-size: 1.5rem !important;
     }
+    .empaques-p p {
+        font-size: 0.8em;
+    }
     .m6 h3 {
-        font-size: 2.5rem !important;
+        font-size: 1.9rem !important;
     }
 
     .notablet .valign-wrapper{
@@ -427,10 +466,11 @@ input:not([type]):focus:not([readonly]) + label, input[type=text]:focus:not([rea
         padding-top: 15px;
     }
     .mini-img h6{
-        font-size: 1.6rem !important;
+        font-size: 1.2rem !important;
     }
     #agro h5 {
         font-size: 1.2rem;
+        margin-bottom: 0;
     }
 }
 
@@ -441,16 +481,17 @@ input:not([type]):focus:not([readonly]) + label, input[type=text]:focus:not([rea
         -webkit-align-items: center;
         -ms-flex-align: center;
         align-items: center;
+        font-size: 0.8em;
+    }
+
+    #header span {
+        font-size: 0.7em;
     }
     #header .center-col{
-        border-right: none;
-        border-left: none;
         padding-top: 15px !important;
         padding-bottom: 20px !important;
     }
     #intranet {
-        float: none;
-        text-align: center;
         padding-bottom: 0px !important;
     }
     #phones {
@@ -470,7 +511,7 @@ input:not([type]):focus:not([readonly]) + label, input[type=text]:focus:not([rea
     margin-top: 2em;
     }
     h3 {
-        font-size: 2.75rem !important;
+        font-size: 2.5rem !important;
     }
     .btn-start {
     margin-top: 1.5em;
@@ -482,6 +523,7 @@ input:not([type]):focus:not([readonly]) + label, input[type=text]:focus:not([rea
     }
     #agro h5 {
         font-size: 2.2rem;
+        margin-bottom: 10px;
     }
 
 }
