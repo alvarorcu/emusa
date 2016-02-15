@@ -515,6 +515,23 @@ textarea.materialize-textarea {
         padding-top: 5px !important;
         padding-bottom: 9px !important;
     }
+    .lang-icon {
+        width: 10px;
+        height: 10px;
+        margin-right: 2px;
+        margin-bottom: 1px;
+    }
+    .mail-icon {
+        width: 10px;
+        height: 8px;
+        margin-right: 3px;
+    }
+    .phone-icon {
+        width: 8px;
+        height: 8px;
+        margin-right: 2px;
+        margin-bottom: 0px;
+    }
     #intranet {
         padding-bottom: 0px !important;
     }
