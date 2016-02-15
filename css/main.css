@@ -513,7 +513,15 @@ textarea.materialize-textarea {
 
     #header .center-col {
         padding-top: 5px !important;
-        padding-bottom: 9px !important;
+        padding-bottom: 5px !important;
+    }
+    #header .center-col span.truncate {
+        margin-top: 4px;
+    }
+    .fb-icon {
+        width: 24px;
+        height: auto;
+        margin-right: 4px;
     }
     .lang-icon {
         width: 10px;
