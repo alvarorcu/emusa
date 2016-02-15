@@ -339,6 +339,7 @@ p {
 input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
     margin: 0;
     border-bottom: 3px solid #1e1e1e;
+    height: 2.5rem;
 }
 
 .input-field {
@@ -354,8 +355,9 @@ form .row {
 }
 
 .input-field label.active {
-  -webkit-transform: translateY(-85%);
-          transform: translateY(-85%);
+    font-size: 0.7rem;
+    -webkit-transform: translateY(-110%);
+          transform: translateY(-110%);
 }
 
 input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
@@ -365,6 +367,11 @@ input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]),
 
 input:not([type]):focus:not([readonly]) + label, input[type=text]:focus:not([readonly]) + label, input[type=password]:focus:not([readonly]) + label, input[type=email]:focus:not([readonly]) + label, input[type=url]:focus:not([readonly]) + label, input[type=time]:focus:not([readonly]) + label, input[type=date]:focus:not([readonly]) + label, input[type=datetime-local]:focus:not([readonly]) + label, input[type=tel]:focus:not([readonly]) + label, input[type=number]:focus:not([readonly]) + label, input[type=search]:focus:not([readonly]) + label, textarea.materialize-textarea:focus:not([readonly]) + label {
     color: #4c4c4c;
+}
+
+textarea.materialize-textarea {
+    min-height: 2.5rem;
+    padding-bottom: 0.3rem;
 }
 
 /* ==========================================================================
@@ -439,6 +446,18 @@ input:not([type]):focus:not([readonly]) + label, input[type=text]:focus:not([rea
     .btn-start {
         margin-top: 2em;
     }
+    .input-field label {
+        font-size: 1em;
+    }
+
+    .input-field label.active {
+        font-size: 0.6rem;
+    }
+
+    form {
+        font-size: 0.8em;
+    }
+
 }
 
 @media only screen and (max-width: 992px) {
