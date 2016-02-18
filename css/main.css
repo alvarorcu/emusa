@@ -374,11 +374,118 @@ textarea.materialize-textarea {
     padding-bottom: 0.3rem;
 }
 
+
+/* ==========================================================================
+   TECNOLOGIA
+   ========================================================================== */
+
+.center-col p{
+    color: #1e1e1e;
+}
+
+#tec-inicio .center-col p{
+    color: #fff;
+}
+
+#tec-inicio, #tec1, #tec2 {
+    background-image: url("../img/assets/fondo1.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    margin-bottom: 0;
+    padding-top: 217px;
+    color: #fff;
+    padding-bottom: 0;
+}
+
+#tec-inicio h2 {
+    margin-top: 3em;
+    font-size: 3.4rem;
+    color: #fff;
+}
+
+.tecnologia .row, .tecnologia .container {
+    margin-bottom: 0;
+}
+
+.tecnologia .col {
+    padding-bottom: 2em;
+}
+
+#tec-inicio .center-col {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0 1.5em 8em;
+}
+
+#tec-inicio .btn-large {
+    background-color: #fff;
+    color: #1e1e1e;
+    margin-top: 2em;
+}
+
+#tec1 {
+    background-image: url("../img/assets/fondo2.jpg");
+    padding-top: 0;
+}
+
+#tec2 {
+    background-image: url("../img/assets/fondo3.jpg");
+    padding-top: 0;
+}
+
+.tec-p {
+    margin-bottom: 2em;
+    margin-top: 1em;
+}
+
+.card {
+    background-color: #1e1e1e;
+    color: #fff;
+    margin: 0.5rem 0 0.7rem 0;
+    border-radius: 0;
+    min-height: 78px;
+}
+
+.card .card-content {
+    width: 100%;
+}
+
+.card p {
+    color: #fff;
+    font-size: 0.9em;
+    margin-bottom: 0;
+}
+
+#tec1 .center-col, #tec2 .center-col {
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+.card .col {
+    padding: 0;
+    margin: 0;
+}
+
+.card h2 {
+    margin: 0 0 0 2px;
+    line-height: 10px;
+    text-align: center;
+}
+
+.card .card-content p {
+    margin: 0 5px 0 8px;
+}
+
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
 @media only screen and (max-width: 1600px) {
+    h2 {
+        font-size: 3rem !important;
+    }
     h3 {
         font-size: 1.8rem !important;
     }
@@ -405,6 +512,9 @@ textarea.materialize-textarea {
 }
 
 @media only screen and (max-width: 1250px) {
+    h2 {
+        font-size: 2.8rem !important;
+    }
     .brand-logo img{
         height: 85px;
         width: auto;
@@ -461,6 +571,9 @@ textarea.materialize-textarea {
 }
 
 @media only screen and (max-width: 992px) {
+    h2 {
+        font-size: 2.5rem !important;
+    }
     .brand-logo {
         margin: 0;
     }
@@ -494,6 +607,9 @@ textarea.materialize-textarea {
 }
 
 @media only screen and (max-width: 600px) {
+    h2 {
+        font-size: 3.5rem !important;
+    }
     #header {
         margin: 5px 0 0;
         display: block;

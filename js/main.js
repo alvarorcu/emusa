@@ -6,6 +6,10 @@ $(document).ready(function() {
   //you know the position.
   $(".button-collapse").sideNav();
 
+  $(document).ready(function(){
+      $('.parallax').parallax();
+    });
+
   $('a[href^="#"]').click(function() {
     
     var target = $(this).attr( "href");
@@ -24,6 +28,8 @@ $(document).ready(function() {
       }
     }
   });
+
+  
 });
 
     // if ($(window).width() < 600) {
