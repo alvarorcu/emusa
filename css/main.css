@@ -154,6 +154,10 @@ a {
     z-index: 1000;
 }
 
+#navbar-fixed .container {
+    width: 100%;
+}
+
 #phones {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
@@ -597,6 +601,9 @@ textarea.materialize-textarea {
     h2 {
         font-size: 2.5rem !important;
     }
+    #header span {
+        font-size: 0.7em;
+    }  
     .brand-logo {
         margin: 0;
     }
