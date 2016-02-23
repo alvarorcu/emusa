@@ -211,6 +211,20 @@ p {
     margin: 5px;
 }
 
+#estandares p {
+    font-size: 1em;
+}
+
+ol {
+    -webkit-padding-start: 20px;
+}
+
+li {
+    padding-bottom: 1em;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 /* ==========================================================================
    EMPACATE
    ========================================================================== */
@@ -394,7 +408,7 @@ textarea.materialize-textarea {
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;
-    margin-bottom: 0;
+    margin-bottom: 26px;
     padding-top: 217px;
     color: #fff;
     padding-bottom: 0;
@@ -495,6 +509,10 @@ textarea.materialize-textarea {
         font-size: 1em;
     }
 
+    #estandares p {
+        font-size: 0.9em;
+    }
+
     #visit-us{
         margin-left: 0;
         padding: 5px 10px;
@@ -537,6 +555,10 @@ textarea.materialize-textarea {
     }
     p {
         font-size: 0.9em;
+    }
+    #tec-inicio {
+        padding-top: 187px;
+
     }
 }
 
@@ -693,6 +715,11 @@ textarea.materialize-textarea {
     #empaques {
         padding-top: 90px;
     }
+
+    #tec-inicio {
+        padding-top: 130px;
+
+    
 }
 
 @media only screen and (min-width: 35em) {
