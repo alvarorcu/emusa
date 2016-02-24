@@ -513,7 +513,7 @@ textarea.materialize-textarea {
         font-size: 1em;
     }
 
-    #estandares p {
+    #estandares p, li {
         font-size: 0.9em;
     }
 
