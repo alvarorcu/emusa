@@ -529,6 +529,10 @@ textarea.materialize-textarea {
     padding: 15px;
     border: 9px #082d44 solid;
 }
+.map-col {
+    margin-right: 5%;
+}
+    
 
 /* ==========================================================================
    Media Queries
@@ -776,7 +780,11 @@ textarea.materialize-textarea {
 
     #tec-inicio {
         padding-top: 130px;
+    }
 
+    .map-col {
+        margin-bottom: 50px;
+    }
     
 }
 
