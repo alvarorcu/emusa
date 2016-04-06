@@ -59,6 +59,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'emballages',
+    'emballages_en',
+    'emballages_pt',
     #'django_settings',
     #'rest_framework',
 )

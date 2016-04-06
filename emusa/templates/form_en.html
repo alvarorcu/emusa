@@ -1,0 +1,1751 @@
+{% load staticfiles %}
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>EMUSA | Great Packaging For Great Ideas</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="{% static 'icons/apple-touch-icon.png' %}" />
+        <link rel="apple-touch-icon" sizes="57x57" href="{% static 'icons/apple-touch-icon-57x57.png' %}" />
+        <link rel="apple-touch-icon" sizes="72x72" href="{% static 'icons/apple-touch-icon-72x72.png' %}" />
+        <link rel="apple-touch-icon" sizes="76x76" href="{% static 'icons/apple-touch-icon-76x76.png' %}" />
+        <link rel="apple-touch-icon" sizes="114x114" href="{% static 'icons/apple-touch-icon-114x114.png' %}" />
+        <link rel="apple-touch-icon" sizes="120x120" href="{% static 'icons/apple-touch-icon-120x120.png' %}" />
+        <link rel="apple-touch-icon" sizes="144x144" href="{% static 'icons/apple-touch-icon-144x144.png' %}" />
+        <link rel="apple-touch-icon" sizes="152x152" href="{% static 'icons/apple-touch-icon-152x152.png' %}" />
+        <link rel="apple-touch-icon" sizes="180x180" href="{% static 'icons/apple-touch-icon-180x180.png' %}" />
+
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="{% static 'css/normalize.min.css' %}">
+
+        <link rel="stylesheet" href="{% static 'css/materialize.css' %}">
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+        <script src="{% static 'js/modernizr-2.8.3.min.js' %}"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo"><img src="{% static 'img/logo.png' %}"></a>
+                    <ul class="right">
+                       <li class="active"><a href="index.html">EDIT</a></li>
+                       <li><a href="#logout">CLOSE</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+          <form action="" method="POST" enctype="multipart/form-data">{% csrf_token %}
+            <ul>
+            <div class="section top-section form-group">
+              <div class="container">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);" class="browser-default">
+                      <option value="" disabled selected>Choose the language</option>
+                      <option value="form">Spanish</option>
+                      <option value="form_en.html">English</option>
+                      <option value="form_pt.html">Portugues</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col s12">
+                    <ul class="collapsible popout" data-collapsible="expandable">
+                      <li>
+                        <div class="collapsible-header">COMPANY INFORMATION</div>
+                        <div class="collapsible-body">
+                          <div class="container">
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form1.encorreo}}
+                                  <!-- <input id="email" type="email" class="validate" value="customerservice@emusa.com.pe"> -->
+                                  <label class="active" for="email">Mail</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  <label class="active" for="number">Phone</label>
+                                  <!-- <input id="number1" type="tel" class="validate" value="(511) 6176700">
+                                  <input id="number2" type="tel" class="validate" value="(502) 65450500">
+                                  <input id="number3" type="tel" class="validate" value="(55) 19-3113-3131"> -->
+                                  {{form1.entelf1}}
+                                  {{form1.entelf2}}
+                                  {{form1.entelf3}}
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="file-field input-field">
+                                  <div class="btn">
+                                    <span>Logo</span>
+                                    <input type="file">
+                                  </div>
+                                  <div class="file-path-wrapper">
+                                    <!-- <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG"> -->
+                                    {{form1.enlogo}}
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  <label class="active" for="menu">Menu</label>
+                                  {{form1.enmenu1}}
+                                  {{form1.enmenu2}}
+                                  {{form1.enmenu3}}
+                                  {{form1.enmenu4}}
+                                  {{form1.enmenu5}}
+                                  {{form1.enmenu6}}
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="collapsible-header">START</div>
+                        <div class="collapsible-body">
+                          <div class="container">
+                              <h5>SECTION 1</h5>
+                              <div class="row first-row">
+                                <div class="input-field col s12">
+                                  {{form1.entitulo_111}}
+                                  <label class="active" for="text">Text Title 1</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form1.entext_secundario111}}
+                                  <label class="active" for="textarea">Secondary Text 1</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="file-field input-field">
+                                  <div class="btn">
+                                    <span>Emballage 1</span>
+                                    {{form1.enimagen111}}
+                                  </div>
+                                  <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                  </div>
+                                </div>
+                                <div class="file-field input-field">
+                                  <div class="btn">
+                                    <span>Emballage 2</span>
+                                    {{form1.enimagen112}}
+                                  </div>
+                                  <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                  </div>
+                                </div>
+                                <div class="file-field input-field">
+                                  <div class="btn">
+                                    <span>Emballage 3</span>
+                                    {{form1.enimagen113}}
+                                  </div>
+                                  <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                  </div>
+                                </div>
+                                <div class="file-field input-field">
+                                  <div class="btn">
+                                    <span>Emballage 4</span>
+                                    {{form1.enimagen114}}
+                                  </div>
+                                  <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                  </div>
+                                </div>
+                                <div class="file-field input-field">
+                                  <div class="btn">
+                                    <span>Emballage 5</span>
+                                    {{form1.enimagen115}}
+                                  </div>
+                                  <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                  </div>
+                                </div>
+                                <div class="file-field input-field">
+                                  <div class="btn">
+                                    <span>Emballage 6</span>
+                                    {{form1.enimagen116}}
+                                  </div>
+                                  <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                  </div>
+                                </div>
+                              </div>
+                              <h5>SECTION 2</h5>
+                              <div class="row first-row">
+                                <div class="input-field col s12">
+                                  {{form1.entitulo_121}}
+                                  <label class="active" for="text">Text Title 2</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form1.entext_secundario121}}
+                                  <label class="active" for="textarea">Secondary Text 2</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="file-field input-field">
+                                  <div class="btn">
+                                    <span>Image 1</span>
+                                    {{form1.enimagen121}}
+                                  </div>
+                                  <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                  </div>
+                                </div>
+                                <div class="file-field input-field">
+                                  <div class="btn">
+                                    <span>Image 2</span>
+                                    {{form1.enimagen122}}
+                                  </div>
+                                  <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                  </div>
+                                </div>
+                              </div>
+                              <h5>SECTION 3</h5>
+                              <div class="row first-row">
+                                <div class="file-field input-field">
+                                  <div class="btn">
+                                    <span>Image Title Central:</span>
+                                    {{form1.enimagen131}}
+                                  </div>
+                                  <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form1.ensubtitulo131}}
+                                  <label class="active" for="text">Image Title1:</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form1.entext_secundario131}}
+                                  <label class="active" for="textarea">Secondary Text 1</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="file-field input-field">
+                                  <div class="btn">
+                                    <span>Image 1</span>
+                                    {{form1.enimagen132}}
+                                  </div>
+                                  <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form1.ensubtitulo132}}
+                                  <label class="active" for="text">Text Title 2</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form1.entext_secundario132}}
+                                  <label class="active" for="textarea">Secondary Text 2</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="file-field input-field">
+                                  <div class="btn">
+                                    <span>Image 2</span>
+                                    {{form1.enimagen133}}
+                                  </div>
+                                  <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                  </div>
+                                </div>
+                              </div>
+
+                              <h5>SECTION 4</h5>
+                              <div class="row first-row">
+                                <div class="file-field input-field">
+                                  <div class="btn">
+                                    <span>Image Countries Section 4 :</span>
+                                    {{form1.enimagen141}}
+                                  </div>
+                                  <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                  </div>
+                                </div>
+                              </div>
+															<div class="row">
+                                <div class="file-field input-field">
+                                  <div class="btn">
+                                    <span>Image Countries Section 4: </span>
+                                    {{form1.enimagen142}}
+                                  </div>
+                                  <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                  </div>
+                                </div>
+                              </div>
+															
+                              <h5>SECTION 5</h5>
+                              <div class="row first-row">
+                                <div class="input-field col s12">
+                                  {{form1.entitulo_151}}
+                                  <label class="active" for="text">Text Title 5</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="file-field input-field">
+                                  <div class="btn">
+                                    <span>Image Title 5</span>
+                                  {{form1.enimagen151}}
+                                  </div>
+                                  <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form1.entext_secundario151}}
+                                  <label class="active" for="textarea">Secondary Text 5 :</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="file-field input-field">
+                                  <div class="btn">
+                                    <span>Image Central 5</span>
+                                    {{form1.enimagen152}}
+                                  </div>
+                                  <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="file-field input-field">
+                                  <div class="btn">
+                                    <span>Image SubTitle 5</span>
+                                    {{form1.enimagen153}}
+                                  </div>
+                                  <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form1.entext_secundario152}}
+                                  <label class="active" for="textarea">Secondary Text Sub5</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="file-field input-field">
+                                  <div class="btn">
+                                    <span>Image Certificate:</span>
+                                    {{form1.enimg_certificado}}
+                                  </div>
+                                  <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- <div class="row">
+                                <div class="col s12 center-align">
+                                    <a class="waves-effect waves-light btn-large">GUARDAR</a>
+                                </div>
+                              </div> -->
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="collapsible-header">Soak Up</div>
+                        <div class="collapsible-body">
+                          <div class="container">
+                            <h5>SECTION 2.0</h5>
+                            <div class="row first-row">
+                              <div class="input-field col s12">
+                                {{form2.entitulo_201}}
+                                <label class="active" for="text">Text Title 1</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image Title:</span>
+                                  {{form2.enimagen201}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                            <div class="row">
+                              <div class="input-field col s12">
+                                {{form2.entext_secundario201}}
+                                <label class="active" for="textarea">Secondary Text 1</label>
+                              </div>
+                            </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.enboton_201}}
+                                  <label class="active" for="text">BUTTON 1:</label>
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Emballage 1</span>
+                                  {{form2.enimagen202}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Emballage 2</span>
+                                  {{form2.enimagen203}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <h5>SECTION 2.1</h5>
+                              <div class="row first-row">
+                                <div class="input-field col s12">
+                                  {{form2.entitulo_211}}
+                                  <label class="active" for="text">Text Title 1</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.entext_secundario211}}
+                                  <label class="active" for="textarea">Secondary Text 1</label>
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Emballage 1</span>
+                                  {{form2.enimagen211}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Emballage 2</span>
+                                  {{form2.enimagen212}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.entitulo_212}}
+                                  <label class="active" for="text">Text Title 2</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.entext_secundario212}}
+                                  <label class="active" for="textarea">Secondary Text 2</label>
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Emballage 1</span>
+                                  {{form2.enimagen213}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Emballage 2</span>
+                                  {{form2.enimagen214}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.entitulo_213}}
+                                  <label class="active" for="text">Text Title 3</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.entext_secundario213}}
+                                  <label class="active" for="textarea">Secondary Text 3</label>
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Emballage 1</span>
+                                  {{form2.enimagen215}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Emballage 2</span>
+                                  {{form2.enimagen216}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <h5>SECTION 2.2</h5>
+                              <div class="file-field input-field first-row">
+                                <div class="btn">
+                                  <span>Title Image Center:</span>
+                                  {{form2.enimagen221}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.enempaque_220}}
+                                  <label class="active" for="text">OPTION 1</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.enempaque_221}}
+                                  <label class="active" for="text">OPTION 2</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.enempaque_222}}
+                                  <label class="active" for="text">OPTION 3</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.enempaque_223}}
+                                  <label class="active" for="text">OPTION 4</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.enempaque_224}}
+                                  <label class="active" for="text">OPTION 5</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.enempaque_225}}
+                                  <label class="active" for="text">OPTION 6</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.enempaque_226}}
+                                  <label class="active" for="text">OPTION 7</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.enempaque_227}}
+                                  <label class="active" for="text">OPTION 8</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.enempaque_228}}
+                                  <label class="active" for="text">OPTION 9</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.enempaque_229}}
+                                  <label class="active" for="text">OPTION 10</label>
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image Emballage 1</span>
+                                  {{form2.enempaque_img220}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image Emballage 2</span>
+                                  {{form2.enempaque_img221}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image Emballage 3:</span>
+                                  {{form2.enempaque_img222}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image Emballage 4:</span>
+                                  {{form2.enempaque_img223}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image Emballage 5:</span>
+                                  {{form2.enempaque_img224}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image Emballage 6:</span>
+                                  {{form2.enempaque_img225}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image Emballage 7:</span>
+                                  {{form2.enempaque_img226}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image Emballage 8:</span>
+                                  {{form2.enempaque_img227}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image Emballage 9:</span>
+                                  {{form2.enempaque_img228}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image Emballage 10:</span>
+                                  {{form2.enempaque_img229}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <h5>SECTION 2.3</h5>
+                              <div class="file-field input-field first-row">
+                                <div class="btn">
+                                  <span>Image FLECHA:</span>
+                                  {{form2.enflecha}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image Title1:</span>
+                                  {{form2.enimagen231}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image  1:</span>
+                                  {{form2.enimagen232}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image Title2:</span>
+                                  {{form2.enimagen235}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image  1:</span>
+                                  {{form2.enimagen236}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <h5>SECTION 2.4</h5>
+                              <div class="row first-row">
+                                <div class="input-field col s12">
+                                  {{form2.entitulo_241}}
+                                  <label class="active" for="text">Text Title 1</label>
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image  Title1:</span>
+                                  {{form2.enimagen241}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image  1:</span>
+                                  {{form2.enimagen242}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.entitulo_242}}
+                                  <label class="active" for="text">Text Title 2</label>
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image  Title2:</span>
+                                  {{form2.enimagen243}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image  1:</span>
+                                  {{form2.enimagen244}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.entitulo_243}}
+                                  <label class="active" for="text">Text Title 3</label>
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image  Title3:</span>
+                                  {{form2.enimagen245}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image  1:</span>
+                                  {{form2.enimagen246}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+        <!-- seccion 5      --><h5>SECTION 2.5</h5>
+                              <div class="row first-row">
+                                <div class="input-field col s12">
+                                  {{form2.entitulo_251}}
+                                  <label class="active" for="text">Text Title 1</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.ensubtitulo2501}}
+                                  <label class="active" for="textarea">SubTitle1</label>
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 1:</span>
+                                  {{form2.enimagen2501}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 2:</span>
+                                  {{form2.enimagen2502}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 3:</span>
+                                  {{form2.enimagen2503}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.entext_secundario2501}}
+                                  <label class="active" for="textarea">Secondary Text 1</label>
+                                </div>
+    <!-- asdasdasd  -->      </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.ensubtitulo2502}}
+                                  <label class="active" for="textarea">SubTitle2</label>
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 1:</span>
+                                  {{form2.enimagen2504}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 2:</span>
+                                  {{form2.enimagen2505}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 3:</span>
+                                  {{form2.enimagen2506}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.entext_secundario2502}}
+                                  <label class="active" for="textarea">Secondary Text 2</label>
+                                </div>
+    <!-- asdasdasd  -->      </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.ensubtitulo2503}}
+                                  <label class="active" for="textarea">SubTitle3</label>
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 1:</span>
+                                  {{form2.enimagen2507}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 2:</span>
+                                  {{form2.enimagen2508}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 3:</span>
+                                  {{form2.enimagen2509}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.entext_secundario2503}}
+                                  <label class="active" for="textarea">Secondary Text 3</label>
+                                </div>
+    <!-- asdasdasd  -->      </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.ensubtitulo2504}}
+                                  <label class="active" for="textarea">SubTitle4</label>
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 1:</span>
+                                  {{form2.enimagen2510}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 2:</span>
+                                  {{form2.enimagen2511}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 3:</span>
+                                  {{form2.enimagen2512}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.entext_secundario2504}}
+                                  <label class="active" for="textarea">Secondary Text 4</label>
+                                </div>
+    <!-- asdasdasd  -->      </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.ensubtitulo2505}}
+                                  <label class="active" for="textarea">SubTitle5</label>
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 1:</span>
+                                  {{form2.enimagen2513}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 2:</span>
+                                  {{form2.enimagen2514}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 3:</span>
+                                  {{form2.enimagen2515}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.entext_secundario2505}}
+                                  <label class="active" for="textarea">Secondary Text 5</label>
+                                </div>
+    <!-- asdasdasd  -->      </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.ensubtitulo2506}}
+                                  <label class="active" for="textarea">SubTitle6</label>
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 1:</span>
+                                  {{form2.enimagen2516}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 2:</span>
+                                  {{form2.enimagen2517}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 3:</span>
+                                  {{form2.enimagen2518}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.entext_secundario2506}}
+                                  <label class="active" for="textarea">Secondary Text 6</label>
+                                </div>
+    <!-- asdasdasd  -->      </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.ensubtitulo2507}}
+                                  <label class="active" for="textarea">SubTitle7</label>
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 1:</span>
+                                  {{form2.enimagen2519}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 2:</span>
+                                  {{form2.enimagen2520}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 3:</span>
+                                  {{form2.enimagen2521}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.entext_secundario2507}}
+                                  <label class="active" for="textarea">Secondary Text 7</label>
+                                </div>
+    <!-- asdasdasd  -->      </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.ensubtitulo2508}}
+                                  <label class="active" for="textarea">SubTitle8</label>
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 1:</span>
+                                  {{form2.enimagen2522}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 2:</span>
+                                  {{form2.enimagen2523}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 3:</span>
+                                  {{form2.enimagen2524}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.entext_secundario2508}}
+                                  <label class="active" for="textarea">Secondary Text 8</label>
+                                </div>
+    <!-- asdasdasd  -->      </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.ensubtitulo2509}}
+                                  <label class="active" for="textarea">SubTitle9</label>
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 1:</span>
+                                  {{form2.enimagen2525}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 2:</span>
+                                  {{form2.enimagen2526}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 3:</span>
+                                  {{form2.enimagen2527}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.entext_secundario2509}}
+                                  <label class="active" for="textarea">Secondary Text 9</label>
+                                </div>
+    <!-- asdasdasd  -->      </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.ensubtitulo2510}}
+                                  <label class="active" for="textarea">SubTitle10</label>
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 1:</span>
+                                  {{form2.enimagen2528}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 2:</span>
+                                  {{form2.enimagen2529}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 3:</span>
+                                  {{form2.enimagen2530}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.entext_secundario2510}}
+                                  <label class="active" for="textarea">Secondary Text 10</label>
+                                </div>
+    <!-- asdasdasd  -->      </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.ensubtitulo2511}}
+                                  <label class="active" for="textarea">SubTitle11</label>
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 1:</span>
+                                  {{form2.enimagen2531}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 2:</span>
+                                  {{form2.enimagen2532}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 3:</span>
+                                  {{form2.enimagen2533}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.entext_secundario2511}}
+                                  <label class="active" for="textarea">Secondary Text 11</label>
+                                </div>
+    <!-- asdasdasd  -->      </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.ensubtitulo2512}}
+                                  <label class="active" for="textarea">SubTitle12</label>
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 1:</span>
+                                  {{form2.enimagen2534}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 2:</span>
+                                  {{form2.enimagen2535}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 3:</span>
+                                  {{form2.enimagen2536}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.entext_secundario2512}}
+                                  <label class="active" for="textarea">Secondary Text 12</label>
+                                </div>
+    <!-- asdasdasd  -->      </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.ensubtitulo2513}}
+                                  <label class="active" for="textarea">SubTitle13</label>
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 1:</span>
+                                  {{form2.enimagen2537}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 2:</span>
+                                  {{form2.enimagen2538}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 3:</span>
+                                  {{form2.enimagen2539}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.entext_secundario2513}}
+                                  <label class="active" for="textarea">Secondary Text 13</label>
+                                </div>
+    <!-- asdasdasd  -->      </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.ensubtitulo2514}}
+                                  <label class="active" for="textarea">SubTitle14</label>
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 1:</span>
+                                  {{form2.enimagen2540}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 2:</span>
+                                  {{form2.enimagen2541}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 3:</span>
+                                  {{form2.enimagen2542}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.entext_secundario2514}}
+                                  <label class="active" for="textarea">Secondary Text 14</label>
+                                </div>
+    <!-- asdasdasd  -->      </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.ensubtitulo2515}}
+                                  <label class="active" for="textarea">SubTitle15</label>
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 1:</span>
+                                  {{form2.enimagen2543}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 2:</span>
+                                  {{form2.enimagen2544}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image 3:</span>
+                                  {{form2.enimagen2545}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form2.entext_secundario2515}}
+                                  <label class="active" for="textarea">Secondary Text 15</label>
+                                </div>
+    <!-- asdasdasd  -->      </div>
+                            <div class="row">
+                              <div class="input-field col s12">
+                                {{form2.enboton_251}}
+                                <label class="active" for="text">Button 1:</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="input-field col s12">
+                                {{form2.enboton_252}}
+                                <label class="active" for="text">Button 2:</label>
+                              </div>
+                            </div>
+                            <div class="file-field input-field">
+                              <div class="btn">
+                                <span>Image 1:</span>
+                                {{form2.enimagen251}}
+                              </div>
+                              <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="input-field col s12">
+                                {{form2.encuestionario}}
+                                <label class="active" for="text">Title Questionary:</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="input-field col s12">
+                                {{form2.enpregunta21}}
+                                <label class="active" for="text">QUESTION 1:</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="input-field col s12">
+                                {{form2.enpregunta22}}
+                                <label class="active" for="text">QUESTION 2:</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="input-field col s12">
+                                {{form2.enpregunta23}}
+                                <label class="active" for="text">QUESTION 3:</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="input-field col s12">
+                                {{form2.enpregunta24}}
+                                <label class="active" for="text">QUESTION 4:</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="input-field col s12">
+                                {{form2.enboton_253}}
+                                <label class="active" for="text">Button 3:</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="collapsible-header">TECNOLOGY</div>
+                        <div class="collapsible-body">
+                          <div class="container">
+                              <h5>SECTION 3.0</h5>
+                              <div class="row first-row">
+                                <div class="input-field col s12">
+                                  {{form3.entitulo_301}}
+                                  <label class="active" for="text">Text Title 1</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form3.entext_secundario301}}
+                                  <label class="active" for="textarea">Secondary Text 1</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form3.enboton_301}}
+                                  <label class="active" for="text">BUTTON 1:</label>
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image background 1:</span>
+                                  {{form3.enfondo1}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image  1:</span>
+                                  {{form3.enimagen301}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image  2:</span>
+                                  {{form3.enimagen302}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <h5>SECTION 3.1</h5>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form3.ensubtitulo311}}
+                                  <label class="active" for="text">SubTitle1</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form3.entext_secundario311}}
+                                  <label class="active" for="textarea">Text Box 1</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form3.entext_secundario312}}
+                                  <label class="active" for="textarea">Text Box 2</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form3.entext_secundario313}}
+                                  <label class="active" for="textarea">Text Box 3</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form3.entext_secundario314}}
+                                  <label class="active" for="textarea">Text Box 4</label>
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image Emballage 1:</span>
+                                  {{form3.enimagen311}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image Emballage 2:</span>
+                                  {{form3.enimagen312}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image background 2:</span>
+                                  {{form3.enfondo2}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <h5>SECTION 3.1:</h5>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form3.entext_secundario315}}
+                                  <label class="active" for="textarea">Text Box 5</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form3.entext_secundario316}}
+                                  <label class="active" for="textarea">Text Box 6</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form3.entext_secundario317}}
+                                  <label class="active" for="textarea">Text Box 7</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form3.entext_secundario318}}
+                                  <label class="active" for="textarea">Text Box 8</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form3.entext_secundario319}}
+                                  <label class="active" for="textarea">Text Box 9</label>
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image Emballage:</span>
+                                  {{form3.enimagen313}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image background 3:</span>
+                                  {{form3.enfondo3}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <h5>SECTION 3.2</h5>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image Triangle Up:</span>
+                                  {{form3.entr_top}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form3.entitulo_321}}
+                                  <label class="active" for="text">Text Title 1</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form3.entext_secundario321}}
+                                  <label class="active" for="textarea">Secondary Text 1</label>
+                                </div>
+                              </div>
+                              <div class="file-field input-field">
+                                <div class="btn">
+                                  <span>Image Triangle Down:</span>
+                                  {{form3.entr_bottom}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="collapsible-header">OUR COSTUMERS</div>
+                        <div class="collapsible-body">
+                          <div class="container">
+                              <h5>SECTION 1</h5>
+                              <div class="file-field input-field first-row">
+                                <div class="btn">
+                                  <span>Image Background:</span>
+                                  {{form4.enimagen401}}
+                                </div>
+                                <div class="file-path-wrapper">
+                                  <input class="file-path validate" type="text" placeholder="Choose an Image in format PNG or JPG">
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="collapsible-header">CONTACT US</div>
+                        <div class="collapsible-body">
+                          <div class="container">
+                              <h5>SECTION 1</h5>
+                              <div class="row first-row">
+                                <div class="input-field col s12">
+                                  {{form5.entitulo_501}}
+                                  <label class="active" for="text">Text Title 1</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form5.enpregunta51}}
+                                  <label class="active" for="text">QUESTION 1:</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form5.enpregunta52}}
+                                  <label class="active" for="text">QUESTION 2:</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form5.enpregunta53}}
+                                  <label class="active" for="text">QUESTION 3:</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form5.enpregunta54}}
+                                  <label class="active" for="text">QUESTION 4:</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  {{form5.enboton_501}}
+                                  <label class="active" for="text">BOTON 1:</label>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="collapsible-header">FOOTER</div>
+                        <div class="collapsible-body">
+                          <div class="container">
+                            <div class="row first-row">
+                              <div class="input-field col s12">
+                                {{form6.entitulo_601}}
+                                <label class="active" for="text">TEXT FOOTER:</label>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </ul>
+            <div class="row">
+              <div class="col s12 center-align">
+              <input class="waves-effect waves-light btn-large"type="submit" value="Save">
+              </div>
+            </div>
+        </form>
+
+            <footer class="page-footer">
+                <div class="footer-copyright">
+                    <div class="container">
+                    © 2016 Copyright Emusa
+                    </div>
+                </div>
+            </footer>
+
+         <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+         <script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script> -->
+          <script src="{% static 'js/jquery-1.11.2.min.js' %}"></script>
+          <script src="{% static 'js/plugins.js' %}"></script>
+          <script src="{% static 'js/materialize.min.js' %}"></script>
+          <script src="{% static 'js/main.js' %}"></script>
+
+      <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>

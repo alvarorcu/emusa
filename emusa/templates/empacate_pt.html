@@ -1,0 +1,527 @@
+{% load staticfiles %}
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>EMUSA | Great Packaging For Great Ideas</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="{% static 'icons/apple-touch-icon.png' %}" />
+        <link rel="apple-touch-icon" sizes="57x57" href="{% static 'icons/apple-touch-icon-57x57.png' %}" />
+        <link rel="apple-touch-icon" sizes="72x72" href="{% static 'icons/apple-touch-icon-72x72.png' %}" />
+        <link rel="apple-touch-icon" sizes="76x76" href="{% static 'icons/apple-touch-icon-76x76.png' %}" />
+        <link rel="apple-touch-icon" sizes="114x114" href="{% static 'icons/apple-touch-icon-114x114.png' %}" />
+        <link rel="apple-touch-icon" sizes="120x120" href="{% static 'icons/apple-touch-icon-120x120.png' %}" />
+        <link rel="apple-touch-icon" sizes="144x144" href="{% static 'icons/apple-touch-icon-144x144.png' %}" />
+        <link rel="apple-touch-icon" sizes="152x152" href="{% static 'icons/apple-touch-icon-152x152.png' %}" />
+        <link rel="apple-touch-icon" sizes="180x180" href="{% static 'icons/apple-touch-icon-180x180.png' %}" />
+
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="{% static 'css/normalize.min.css' %}">
+
+        <link rel="stylesheet" href="{% static 'css/materialize.css' %}">
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+        <script src="{% static 'js/modernizr-2.8.3.min.js' %}"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="navbar-fixed">
+            <div class="container">
+                <div class="row" id="header">
+                    <div class="col s3 m4 center-align" id="intranet">
+                        <div class="row">
+                            <div class="col s6"><a href="http://www.quimpac.com.pe:8082/webcomprobantes/Formularios/frmAutenticacionUsuario.aspx" target="_blank"><b>FACTURA<br>ELECTRÓNICA</b></a></div>
+                            <div class="col s6 border-left"><a href="https://sites.google.com/a/emusa.com.pe/intranet/home" target="_blank"><b>INTRANET</b></a><br><a href="https://www.facebook.com/EmusaPeruSAC/" target="_blank"><img class="fb-icon" src="{% static 'img/icons/fb-s.png' %}" width="36" height="30"></a></div>
+                        </div>
+                    </div>
+                    <div class="col s4 m4 center-col">
+                        <span><img src="{% static 'img/icons/lang.png' %}" class="lang-icon">
+                        <b>IDIOMA: </b><!-- <a class='dropdown-button btn' href='#' data-activates='dropdown1'>{% if "es" == index.idioma  %}Español{% elif "en" == index.idioma  %}Inglés{% elif "pt" == index.idioma  %}Portugues{% endif %}</a> -->
+                         <a class="dropdown-button btn" href="#" data-activates="dropdown1">Portugues</a>
+                        <ul id='dropdown1' class='dropdown-content'>
+                            <li><a href="clientes.html">Espanhol</a></li>
+                            <li><a href="clientes_en.html">Inglês</a></li>
+                            <li><a href="clientes_pt.html">Portugues</a></li>
+                          </ul>
+                          </span>
+
+                        <span class="truncate"><img src="{% static 'img/icons/mail.png' %}" class="mail-icon"><a href="mailto:customerservice@emusa.com.pe">{{index.ptcorreo}}</a></span>
+                    </div>
+                    <div class="col s5 m4" id="phones">
+                        <span><img src="{% static 'img/icons/phone.png' %}" class="phone-icon"><b>PERÚ:</b>{{index.pttelf1}}</span>
+                        <br>
+                        <span><img src="{% static 'img/icons/phone.png' %}" class="phone-icon"><b>GUATEMALA:</b> {{index.pttelf2}}</span>
+                        <br>
+                        <span class="truncate"><img src="{% static 'img/icons/phone.png' %}" class="phone-icon"><b>BRASIL:</b>{{index.pttelf3}}</span>
+                    </div>
+                </div>
+            </div>
+
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo"><img src="{{index.ptlogo.url}}"></a>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                       <li class="active"><a href="index.html">{{index.ptmenu1}}</a></li>
+                       <li><a href="empacate_pt.html">{{index.ptmenu2}}</a></li>
+                       <li><a href="tecnologia_pt.html">{{index.ptmenu3}}</a></li>
+                       <li><a href="#">{{index.ptmenu4}}</a></li>
+                       <li><a href="clientes_pt.html">{{index.ptmenu5}}</a></li>
+                       <li><a href="contactanos_pt.html">{{index.ptmenu6}}</a></li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-demo">
+                        <li><a href="index_pt.html">{{index.ptmenu1}}</a></li>
+                       <li><a href="empacate_pt.html">{{index.ptmenu2}}</a></li>
+                       <li><a href="tecnologia_pt.html">{{index.ptmenu3}}</a></li>
+                       <li><a href="#">{{index.ptmenu4}}</a></li>
+                       <li><a href="clientes_pt.html">{{index.ptmenu4}}</a></li>
+                       <li><a href="contactanos_pt.html">{{index.ptmenu6}}</a></li>
+                       </ul>
+                </div>
+            </nav>
+        </div>
+        <main>
+            <div class="section top-section" id="emp-inicio">
+                <div class="container">
+                    <div class="row balign-wrapper">
+                        <div class="col m6 l4 push-m6 push-l4 center-align">
+                            <h3>{{empacar.pttitulo201}}</h3>
+                            <img class="responsive-img" src="{{index.ptimagen201.url}}">
+                            <p class="text-justify mt30">{{empacar.pttext_secundario201}}</p>
+                            <a href="#empaques" class="waves-effect waves-light btn-large btn-start">{{empacar.ptboton_201}}</a>
+                        </div>
+                        <div class="col m6 pull-m6 l4 pull-l4 center-align balign">
+                            <img class="responsive-img" src="{{empacar.ptimagen202.url}}">
+                        </div>
+
+                        <div class="col l4 center-align  balign hide-on-med-and-down">
+                            <img class="responsive-img" src="{{empacar.ptimagen203.url}}">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="empaques">
+                <div class="container">
+                    <div class="row">
+                        <a href="#agro" class="container-btn">
+                            <div class="col s12 m4 center-align">
+                                <h3>{{empacar.pttitulo_211}}</h3>
+                                <div class="empaques-p">
+                                    <p>{{empacar.pttext_secundario211}}</p>
+                                    <img class="responsive-img" src="{{empacar.ptimagen211.url}}">
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#food" class="container-btn">
+                            <div class="col s12 m4 center-align">
+                                <h3>{{empacar.pttitulo_212}}</h3>
+                                <div class="empaques-p">
+                                    <p>{{empacar.pttext_secundario212}}</p>
+                                    <img class="responsive-img" src="{{empacar.ptimagen213.url}}">
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#nonfood" class="container-btn">
+                            <div class="col s12 m4 center-align">
+                                <h3>{{empacar.pttitulo_213}}</h3>
+                                <div class="empaques-p">
+                                    <p>{{empacar.pttext_secundario213}}</p>
+                                    <img class="responsive-img" src="{{empacar.ptimagen215.url}}">
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="section notablet" id="food">
+                <div class="container">
+                    <div class="row valign-wrapper">
+                        <div class="col m12 l4 push-l4 valign center-align">
+                            <img class="responsive-img" src="{{empacar.ptimagen221.url}}">
+
+                        </div>
+                        <div class="col m12 l4 pull-l4 center-align mini-img">
+                            <div class="row">
+                                <a href="#elegir">
+                                    <div class="col s4 center-align">
+                                        <h6>{{empacar.ptempaque_220}}</h6>
+                                        <img class="responsive-img" src="{{empacar.ptempaque_img220.url}}">
+                                    </div>
+                                </a>
+                                <a href="#elegir">
+                                    <div class="col s4 center-align">
+                                        <h6>{{empacar.ptempaque_221}}</h6>
+                                        <img class="responsive-img" src="{{empacar.ptempaque_img221.url}}">
+                                    </div>
+                                </a>
+                                <a href="#elegir">
+                                    <div class="col s4 center-align">
+                                        <h6>{{empacar.ptempaque_222}}</h6>
+                                        <img class="responsive-img" src="{{empacar.ptempaque_img222.url}}">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="row">
+                                <a href="#elegir">
+                                    <div class="col s4 offset-s2 center-align">
+                                        <h6>{{empacar.ptempaque_223}}</h6>
+                                        <img class="responsive-img" src="{{empacar.ptempaque_img223.url}}">
+                                    </div>
+                                </a>
+                                <a href="##elegir">
+                                    <div class="col s4 center-align">
+                                        <h6>{{empacar.ptempaque_224}}</h6>
+                                        <img class="responsive-img" src="{{empacar.ptempaque_img224.url}}">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col m12 l4 center-align mini-img">
+                            <div class="row">
+                                <a href="#elegir">
+                                    <div class="col s4 center-align">
+                                        <h6>{{empacar.ptempaque_225}}</h6>
+                                        <img class="responsive-img" src="{{empacar.ptempaque_img225.url}}">
+                                    </div>
+                                </a>
+                                <a href="#elegir">
+                                    <div class="col s4 center-align">
+                                        <h6>{{empacar.ptempaque_226}}</h6>
+                                        <img class="responsive-img" src="{{empacar.ptempaque_img226.url}}">
+                                    </div>
+                                </a>
+                                <a href="#elegir">
+                                    <div class="col s4 center-align">
+                                        <h6>{{empacar.ptempaque_227}}</h6>
+                                        <img class="responsive-img" src="{{empacar.ptempaque_img227.url}}">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="row">
+                                <a href="#elegir">
+                                    <div class="col s4 offset-s2 center-align">
+                                        <h6>{{empacar.ptempaque_228}}</h6>
+                                        <img class="responsive-img" src="{{empacar.ptempaque_img228.url}}">
+                                    </div>
+                                </a>
+                                <a href="#elegir">
+                                    <div class="col s4 center-align">
+                                        <h6>{{empacar.ptempaque_229}}</h6>
+                                        <img class="responsive-img" src="{{empacar.ptempaque_img229.url}}">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="section notablet" id="nonfood">
+                <div class="container">
+                    <a href="#elegir">
+                        <div class="row valign-wrapper">
+                            <div class="col m12 l4 valign center-align">
+                                <img class="responsive-img" src="{{empacar.ptimagen231.url}}">
+                            </div>
+                            <div class="col l2 center-align valign hide-on-med-and-down">
+                                <img class="responsive-img" src="{{empacar.ptflecha.url}}">
+                            </div>
+
+                            <div class="col l6 center-align valign">
+                                <img class="responsive-img" src="{{empacar.ptimagen232.url}}">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#elegir">
+                        <div class="row valign-wrapper">
+                            <div class="col m12 l4 valign center-align">
+                                <img class="responsive-img" src="{{empacar.ptimagen235.url}}">
+                            </div>
+                            <div class="col l2 center-align valign hide-on-med-and-down">
+                                <img class="responsive-img" src="{{empacar.ptflecha.url}}">
+                            </div>
+
+                            <div class="col l6 center-align valign">
+                                <img class="responsive-img" src="{{empacar.ptimagen236.url}}">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="section" id="agro">
+                <div class="container">
+                    <div class="row">
+                        <a href="#elegir">
+                            <div class="col s12 m4 center-align">
+                                <h5>{{empacar.pttitulo_241}}</h5>
+                                <img class="responsive-img" src="{{empacar.ptimagen241.url}}">
+                                <img class="responsive-img empaque-agro" src="{{empacar.ptimagen242.url}}">
+                            </div>
+                        </a>
+                        <a href="#elegir">
+                             <div class="col s12 m4 center-align border-col">
+                                <h5>{{empacar.pttitulo_242}}</h5>
+                                <img class="responsive-img" src="{{empacar.ptimagen243}}">
+                                <img class="responsive-img empaque-agro" src="{{empacar.ptimagen244.url}}">
+                            </div>
+                        </a>
+                        <a href="#elegir">
+                             <div class="col s12 m4 center-align">
+                                <h5>{{empacar.pttitulo_243}}</h5>
+                                <img class="responsive-img" src="{{empacar.ptimagen245}}">
+                                <img class="responsive-img empaque-agro" src="{{empacar.ptimagen246.url}}">
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="section" id="elegir">
+                <div class="container">
+                    <div class="row valign-wrapper">
+                        <a href="#">
+                            <div class="col s12 m4 valign center-align">
+                                <h3>{{empacar.pttitulo_251}}</h3>
+                                <div class="elegido">
+                                    <h5>{{empacar.ptsubtitulo2501}}</h5>
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2501 %}                    {{empacar.ptimagen2501.url}}
+                                    {% endif %}">
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2502 %}                    {{empacar.ptimagen2502.url}}
+                                    {% endif %}">
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2503 %}                    {{empacar.ptimagen2503.url}}
+                                    {% endif %}">
+                                    <p class="text-justify">{{empacar.pttext_secundario2501}}</p>
+                                </div>
+                                <div class="elegido">
+                                    <h5>{{empacar.ptsubtitulo2502}}</h5>
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2504 %}                    {{empacar.ptimagen2504.url}}
+                                    {% endif %}">
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2505 %}                    {{empacar.ptimagen2505.url}}
+                                    {% endif %}">
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2506 %}                    {{empacar.ptimagen2506.url}}
+                                    {% endif %}">
+                                    <p class="text-justify">{{empacar.pttext_secundario2502}}</p>
+                                </div>
+                                <div class="elegido">
+                                    <h5>{{empacar.ptsubtitulo2503}}</h5>
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2507 %}                    {{empacar.ptimagen2507.url}}
+                                    {% endif %}">
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2508 %}                    {{empacar.ptimagen2508.url}}
+                                    {% endif %}">
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2509 %}                    {{empacar.ptimagen2509.url}}
+                                    {% endif %}">
+                                    <p class="text-justify">{{empacar.pttext_secundario2503}}</p>
+                                </div>
+                                <div class="elegido">
+                                    <h5>{{empacar.ptsubtitulo2504}}</h5>
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2510 %}                    {{empacar.ptimagen2510.url}}
+                                    {% endif %}">
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2511 %}                    {{empacar.ptimagen2511.url}}
+                                    {% endif %}">
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2512 %}                    {{empacar.ptimagen2512.url}}
+                                    {% endif %}">
+                                    <p class="text-justify">{{empacar.pttext_secundario2504}}</p>
+                                </div>
+                                <div class="elegido">
+                                    <h5>{{empacar.ptsubtitulo2505}}</h5>
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2513 %}                    {{empacar.ptimagen2513.url}}
+                                    {% endif %}">
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2514 %}                    {{empacar.ptimagen2514.url}}
+                                    {% endif %}">
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2515 %}                    {{empacar.ptimagen2515.url}}
+                                    {% endif %}">
+                                    <p class="text-justify">{{empacar.pttext_secundario2505}}</p>
+                                </div>
+                                <div class="elegido">
+                                    <h5>{{empacar.ptsubtitulo2506}}</h5>
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2516 %}                    {{empacar.ptimagen2516.url}}
+                                    {% endif %}">
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2517 %}                    {{empacar.ptimagen2517.url}}
+                                    {% endif %}">
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2518 %}                    {{empacar.ptimagen2518.url}}
+                                    {% endif %}">
+                                    <p class="text-justify">{{empacar.pttext_secundario2506}}</p>
+                                </div>
+                                <div class="elegido">
+                                    <h5>{{empacar.ptsubtitulo2507}}</h5>
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2519 %}                    {{empacar.ptimagen2519.url}}
+                                    {% endif %}">
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2520 %}                    {{empacar.ptimagen2520.url}}
+                                    {% endif %}">
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2521 %}                    {{empacar.ptimagen2521.url}}
+                                    {% endif %}">
+                                    <p class="text-justify">{{empacar.pttext_secundario2507}}</p>
+                                </div>
+                                <div class="elegido">
+                                    <h5>{{empacar.ptsubtitulo2508}}</h5>
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2522 %}                    {{empacar.ptimagen2522.url}}
+                                    {% endif %}">
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2523 %}                    {{empacar.ptimagen2523.url}}
+                                    {% endif %}">
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2524 %}                    {{empacar.ptimagen2524.url}}
+                                    {% endif %}">
+                                    <p class="text-justify">{{empacar.pttext_secundario2508}}</p>
+                                </div>
+                                <div class="elegido">
+                                    <h5>{{empacar.ptsubtitulo2509}}</h5>
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2525 %}                    {{empacar.ptimagen2525.url}}
+                                    {% endif %}">
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2526 %}                    {{empacar.ptimagen2526.url}}
+                                    {% endif %}">
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2527 %}                    {{empacar.ptimagen2527.url}}
+                                    {% endif %}">
+                                    <p class="text-justify">{{empacar.pttext_secundario2509}}</p>
+                                </div>
+                                <div class="elegido">
+                                    <h5>{{empacar.ptsubtitulo2510}}</h5>
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2528 %}                    {{empacar.ptimagen2528.url}}
+                                    {% endif %}">
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2529 %}                    {{empacar.ptimagen2529.url}}
+                                    {% endif %}">
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2530 %}                    {{empacar.ptimagen2530.url}}
+                                    {% endif %}">
+                                    <p class="text-justify">{{empacar.pttext_secundario2510}}</p>
+                                </div>
+                                <div class="elegido">
+                                    <h5>{{empacar.ptsubtitulo2511}}</h5>
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2531 %}                    {{empacar.ptimagen2531.url}}
+                                    {% endif %}">
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2532 %}                    {{empacar.ptimagen2532.url}}
+                                    {% endif %}">
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2533 %}                    {{empacar.ptimagen2533.url}}
+                                    {% endif %}">
+                                    <p class="text-justify">{{empacar.pttext_secundario2511}}</p>
+                                </div>
+                                <div class="elegido">
+                                    <h5>{{empacar.ptsubtitulo2512}}</h5>
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2534 %}                    {{empacar.ptimagen2534.url}}
+                                    {% endif %}">
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2535 %}                    {{empacar.ptimagen2535.url}}
+                                    {% endif %}">
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2536 %}                    {{empacar.ptimagen2536.url}}
+                                    {% endif %}">
+                                    <p class="text-justify">{{empacar.pttext_secundario2512}}</p>
+                                </div>
+                                <div class="elegido">
+                                    <h5>{{empacar.ptsubtitulo2513}}</h5>
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2537 %}                    {{empacar.ptimagen2537.url}}
+                                    {% endif %}">
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2538 %}                    {{empacar.ptimagen2538.url}}
+                                    {% endif %}">
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2539 %}                    {{empacar.ptimagen2539.url}}
+                                    {% endif %}">
+                                    <p class="text-justify">{{empacar.pttext_secundario2513}}</p>
+                                </div>
+                                <div class="elegido">
+                                    <h5>{{empacar.ptsubtitulo2514}}</h5>
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2540 %}                    {{empacar.ptimagen2540.url}}
+                                    {% endif %}">
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2541 %}                    {{empacar.ptimagen2541.url}}
+                                    {% endif %}">
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2542 %}                    {{empacar.ptimagen2542.url}}
+                                    {% endif %}">
+                                    <p class="text-justify">{{empacar.pttext_secundario2514}}</p>
+                                </div>
+                                <div class="elegido">
+                                    <h5>{{empacar.ptsubtitulo2515}}</h5>
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2543 %}                    {{empacar.ptimagen2543.url}}
+                                    {% endif %}">
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2544 %}                    {{empacar.ptimagen2544.url}}
+                                    {% endif %}">
+                                    <img class="responsive-img empaque-agro" src="{% if empacar.imagen2545 %}                    {{empacar.ptimagen2545.url}}
+                                    {% endif %}">
+                                    <p class="text-justify">{{empacar.pttext_secundario2515}}</p>
+                                </div>
+                                <a class="waves-effect waves-light btn-large" id="visit-us">{{empacar.ptboton_251}}</a>
+                                <a class="waves-effect waves-light btn-large" id="visit-you">{{empacar.ptboton_252}}</a>
+                            </div>
+                             <div class="col s12 m4 valign center-align">
+                                <img class="responsive-img" src="{{empacar.ptimagen251.url}}">
+                            </div>
+                             <div class="col s12 m4 valign center-align">
+                                <div class="row">
+                                    <h3>{{empacar.ptcuestionario}}</h3>
+                                    <form class="col s12">
+                                      <div class="row">
+                                        <div class="input-field col s12">
+                                          <input id="name" type="text" class="validate">
+                                          <label for="name">Ingresa tu nombre</label>
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="input-field col s12">
+                                          <input id="email" type="email" class="validate">
+                                          <label for="email">Ingresa tu correo</label>
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="input-field col s12">
+                                          <input id="number" type="tel" class="validate">
+                                          <label for="number">Ingresa tu número</label>
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="input-field col s12">
+                                          <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                          <label for="textarea1">Escribe el mensaje</label>
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col s12 mt30">
+                                            <a class="waves-effect waves-light btn-large">{{empacar.ptboton_253}}</a>
+                                        </div>
+                                      </div>
+                                    </form>
+                                  </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <footer class="page-footer">
+                <div class="footer-copyright">
+                    <div class="container">
+                    {{footer.pttitulo_601}}
+                    </div>
+                </div>
+            </footer>
+        </main>
+
+
+         <!-- <script src="//{% static 'ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+         <script>window.jQuery || document.write('<script src="{% static 'js/jquery-1.11.2.min.js"><\/script>')</script> -->
+        <script src="{% static 'js/jquery-1.11.2.min.js' %}"></script>
+        <script src="{% static 'js/plugins.js' %}"></script>
+        <script src="{% static 'js/materialize.min.js' %}"></script>
+        <script src="{% static 'js/main.js' %}"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>

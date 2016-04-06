@@ -77,7 +77,7 @@ def add_new_form (request):
 			modelform4.save()
 			modelform5.save()
 			modelform6.save()
-			return redirect("/form/")
+			return redirect("/form.html")
 	else:
 		modelform1 = add_form1()
 		modelform2 = add_form2()
@@ -93,6 +93,36 @@ def add_new_form (request):
 # models.index.objects.last()
 
 
+# def userlogin(request):
+# 	if request.method == "POST":
+# 		if 'register_form' in request.POST:
+# 			user_register = UserRegisterForm(request.POST)
+# 			if user_register.is_valid():
+# 				User.objects.create_user(username = user_register.cleaned_data['username'],
+# 				 email = user_register.cleaned_data['email'], 
+# 				 password = user_register.cleaned_data['password'])
+# 				LogIn(request, user_register.cleaned_data['username'],
+# 						user_register.cleaned_data['password'])
+# 				# return redirect('/form/')
+# 		if 'login_form' in request.POST:
+# 			login_form = LoginForm(request.POST)
+# 			if login_form.is_valid():
+# 				LogIn(request, login_form.cleaned_data['username'],	login_form.cleaned_data['password'])
+# 				return redirect('/form/')
+# 		else:
+# 			print "incorrecto usuario"
+# 			user_register = UserRegisterForm()
+# 			login_form = LoginForm()
+# 			# return redirect('/login/')
+# 	return render(request, 'login.html', 
+# 				{'user_register' : user_register, 'login_form' : login_form})
+
+
+# def LogOut(request):
+# 	logout(request)
+# 	return redirect('/')
+
+
 def userlogin(request):
 	if request.method == "POST":
 		if 'register_form' in request.POST:
@@ -103,17 +133,16 @@ def userlogin(request):
 				 password = user_register.cleaned_data['password'])
 				LogIn(request, user_register.cleaned_data['username'],
 						user_register.cleaned_data['password'])
-				# return redirect('/form/')
+				return redirect('/')
 		if 'login_form' in request.POST:
 			login_form = LoginForm(request.POST)
 			if login_form.is_valid():
-				LogIn(request, login_form.cleaned_data['username'],	login_form.cleaned_data['password'])
-				return redirect('/form/')
+				LogIn(request, login_form.cleaned_data['username'],
+						login_form.cleaned_data['password'])
+				return redirect('/')
 	else:
-		print "incorrecto usuario"
 		user_register = UserRegisterForm()
 		login_form = LoginForm()
-		return redirect('/login/')
 	return render(request, 'login.html', 
 				{'user_register' : user_register, 'login_form' : login_form})
 
